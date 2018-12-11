@@ -7,8 +7,8 @@
       Case Problem 1
 
       Marlin Internet Pricing
-      Author: 
-      Date:   
+      Author: Todd Adcox Jr
+      Date: 12-10-18  
 
       Filename:   mi_pricing.html
 
@@ -18,7 +18,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1" />
    <title>Marlin Internet</title>
    <link href="mi_reset.css" rel="stylesheet" />
-   <link href="mi_styles.css" rel="stylesheet" />          
+   <link href="mi_styles.css" rel="stylesheet" />   
+   <link rel="stylesheet" href="mi_tables.css" />       
 </head>
 
 <body>
@@ -46,7 +47,29 @@
          We provide more than fast access. Take advantage of our 24/7 customer support
          (personal help is <em>always</em> on the line), free security tools, email accounts
          for the whole family, and exclusive online content.</p>
+         <table id="pricing">
+            <colgroup>
+               <col id="firstCol">
+               <col class="dayCols" span="4" />   
+            </colgroup>
+            <thead>
+               <tr>
+                  <th rowspan="2">Select A Plan</th>
+                  <th>Starting</th>
+                  <th>Prime</th>
+                  <th>Prime Plus</th>
+                  <th>Ultra</th>
+               </tr>
+            </thead>
+            <thead>
+               <tr></tr>
+               <tr></tr>
+            </thead>
+         </table>
          
+         
+<!-- 5. Add a thead row group element containing two rows. In the first row, insert five th elements containing the text shown in Figure 6-49. The first heading cell should span two rows. In the second row, add four headings cells containing the prices of the plans shown in Figure 6-49. Use a br element to display the price information on two separate lines. -->
+
       
    </article>
    
