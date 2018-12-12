@@ -13,14 +13,58 @@
 */
 
 /* Table Styles */
+/* for the table element, it is setting the background to a linear gradient, starting at the rgb color and ending at black, and is adding a 5 pixel solid gray border */
+table {
+   background: linear-gradient(to bottom, rgb(190, 215, 255), black);
+   border: 5px solid gray;
+}
+/* for both the th and td elements it is setting the border to a 3 pixel solid gray border, has a line height of 1.4 em, and adds 8px of padding */
+th, td {
+   border: 3px solid gray;
+   line-height: 1.4em;
+   padding: 8px;
+}
 
+/* for the th element, it is seting the background color to black, the font color to the listed rgb and the font weigh is being set to normal. */
+th {
+   background-color: black;
+   color: rgb(130, 210, 255);
+   font-weight: normal;
+}
 
+/* for the td element it is setting the font color to white, font size to 0.9em and is aligning the text to the top */
+td {
+   color: white;
+   font-size: 0.9em;
+   text-align: top;
+}
 
 /* Column Styles */
+/* sets the column width of the col with a id of firstcol to 24% */
+col#firstCol {
+   column-width: 24%;
+}
 
-
+/* sets the width of the col with a class of daycols to 19% */
+col.dayCols {
+   width: 19%;
+}
 
 /* Table Header Styles */
+
+/* sets the  table header row group to a height to 60 pixels, for the first th element in the first row of the table header row group, sets its font size to 2em, the th elements in the first row of the table header row group that are not the first heading cell, the background color is being set to transparent and the font color to black.*/
+thead tr {
+   height: 60px;
+}
+
+thead tr:first-of-type th:first-of-type{
+   font-size: 2em;
+}
+
+thead tr:first-of-type th:not(:first-of-type) {
+   background-color: transparent;
+   color: black;
+}
 
 
 
